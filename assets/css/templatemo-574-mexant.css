@@ -1813,78 +1813,46 @@ body {
 /* === Ajustes Slide Desktop === */
 @media (min-width: 768px) {
   .swiper-container {
-    padding-top: 10px;
+    padding-top: 100px;
   }
-
+  
   .slide-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: calc(100vh - 110px);
-    padding: 0 40px;
-    box-sizing: border-box;
-  }
-
-  .slide-inner .header-text {
-    width: 100%;
-    max-width: 700px;
-    position: relative;
-    top: auto;
-    transform: none;
-    text-align: left;
-  }
-
-  .slide-inner .header-text h2 {
-    font-size: 56px;
-    line-height: 70px;
-    word-break: break-word;
-    margin-bottom: 30px;
-  }
-
-  .slide-inner .header-text p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-bottom: 40px;
-  }
-
-  .slide-inner .header-text .buttons {
-    display: flex;
-    gap: 15px;
-  }
-}
-@media (min-width: 768px) {
-  .slide-inner {
-    padding-top: 140px; /* empurra o conteúdo pra baixo do menu fixo */
+    padding-top: 100px; /* ajuste esse valor conforme necessário para compensar a navbar */
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center; /* centraliza verticalmente */
     align-items: flex-start;
-    height: 100vh;
+    height: calc(100vh - 110px); /* altura total da viewport menos a navbar */
   }
-
+  
   .slide-inner .header-text {
-    position: relative;
-    top: auto;
-    transform: none;
-    width: 50%;
+    width: 100%;       /* utiliza toda a largura disponível */
+    max-width: 700px;  /* limita para evitar que fique muito largo */
     text-align: left;
   }
-
+  
   .slide-inner .header-text h2 {
     font-size: 56px;
     line-height: 70px;
+    margin-bottom: 30px;
     white-space: normal;
     word-break: break-word;
-    overflow-wrap: break-word;
-    margin-bottom: 30px;
   }
-
+  
   .slide-inner .header-text p {
+    font-size: 16px;
+    line-height: 26px;
     margin-right: 60px;
     margin-bottom: 30px;
   }
+  
+  .slide-inner .header-text .buttons {
+    display: flex;
+    gap: 15px;
+  }
 }
+
 
